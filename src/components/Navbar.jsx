@@ -29,26 +29,32 @@ const Navbar = () => {
               Book a table
           </a>
 
-          <button onClick={()=> setMobileOpen(true)}
-          clsassName='md:hidden bg-zinc-800 text-white p-2 rounded-md aspect-square '>
+          <button
+            onClick={() => setMobileOpen(true)}
+            className='md:hidden bg-zinc-800 text-white p-2 rounded-md aspect-square'
+          >
             <MenuIcon />
           </button>
 
         </div>
-      </nav>  
+      </nav>
 
     {/* mobile navigation drawer */}
     <div className={`flex flex-col items-center justify-center p-8 fixed inset-0 bg-white/70 backdrop-blur-md z-40 transform transition-transform
          duration-300 ${mobileOpen ? 'translate-x-0' : 'translate-x-full'}`}>
         <div className='flex flex-col items-center space-y-6 font-medium'>
-          {navLinks.map((link)=>(
-            <a key={link.name} href={link.href} className='text-2xl text-zinc-800 hover:text-orange-500 transition'>
-               onClick={()=> setMobileOpen(false)}
-                {link.name}
+          {navLinks.map((link) => (
+            <a
+              key={link.name}
+              href={link.href}
+              onClick={() => setMobileOpen(false)}
+              className='text-2xl text-zinc-800 hover:text-orange-500 transition'
+            >
+              {link.name}
             </a>
           ))}
 
-            <button onClick={()=> setMobileOpen(false)} 
+            <button onClick={() => setMobileOpen(false)}
             className='bg-zinc-800 text-white p-2 rounded-md aspect-square'>
                 <XIcon />
             </button>
