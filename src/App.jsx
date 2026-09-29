@@ -5,6 +5,8 @@ import About from './sections/About'
 import Stats from './sections/Stats'
 import Dishes from './sections/Dishes'
 import Features from './sections/Features'
+import BookingProcess from './sections/BookingProcess'
+import Timing from './sections/Timing'
 
 
 const App = () => {
@@ -16,6 +18,8 @@ const App = () => {
       <Stats />
       <Dishes />
       <Features />
+      <BookingProcess />
+      <Timing />
     </>
   )
 }
