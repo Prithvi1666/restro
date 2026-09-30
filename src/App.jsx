@@ -9,6 +9,7 @@ import BookingProcess from './sections/BookingProcess'
 import Timing from './sections/Timing'
 import TestimonialSection from './sections/TestimonialSection'
 import FAQs from './sections/FAQs'
+import CTA from './sections/CTA'
 
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
       <Timing />
       <TestimonialSection />
       <FAQs />
+      <CTA />
     </>
   )
 }
